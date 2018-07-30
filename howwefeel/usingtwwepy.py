@@ -12,9 +12,9 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth,wait_on_rate_limit=True)
 #####United Airlines
 # Open/Create a file to append data
-csvFile = open('lula.csv', 'a')
+csvFile = open('lulala.csv', 'a')
 #Use csv Writer
-csvWriter = csv.writer(csvFile)
+csvWriter = csv.writer(csvFile, delimiter = '\t')
 csvWriter.writerow(['DATE', 'TWEET'])
 for tweet in tweepy.Cursor(api.search,q="#lulalivre",count=100,
                            lang="pt",

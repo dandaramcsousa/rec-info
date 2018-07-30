@@ -27,7 +27,8 @@ dbneg <- read_delim("../dbneg.csv",
 db <- rbind(dbpos,dbneg)
 db <- na.omit(db)
 
-write.csv(db, file = "db.csv")
+
+write.csv(dblula, file = "lula.csv")
 
 ```
 

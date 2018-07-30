@@ -175,10 +175,23 @@ $(document).ready(function () {
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxua25pdHI6Om9wdHNfY2h1bmskc2V0KGVjaG8gPSBUUlVFLCB3YXJuaW5nID0gRkFMU0UsIG1lc3NhZ2UgPSBGQUxTRSlcbmxpYnJhcnkodGlkeXZlcnNlKVxubGlicmFyeShnZ3Bsb3QyKVxubGlicmFyeShyZWFkcilcbmxpYnJhcnkoZHBseXIpIFxudGhlbWVfc2V0KHRoZW1lX21pbmltYWwoKSlcbmBgYCJ9 -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxua25pdHI6Om9wdHNfY2h1bmskc2V0KGVjaG8gPSBUUlVFLCB3YXJuaW5nID0gRkFMU0UsIG1lc3NhZ2UgPSBGQUxTRSlcbmxpYnJhcnkodGlkeXZlcnNlKVxuYGBgIn0= -->
 <pre class="r"><code>knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
-library(tidyverse)
-library(ggplot2)
+library(tidyverse)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoicGFja2FnZSCRdGlkeXZlcnNlkiB3YXMgYnVpbHQgdW5kZXIgUiB2ZXJzaW9uIDMuMy4zTG9hZGluZyB0aWR5dmVyc2U6IGdncGxvdDJcbkxvYWRpbmcgdGlkeXZlcnNlOiB0aWJibGVcbkxvYWRpbmcgdGlkeXZlcnNlOiB0aWR5clxuTG9hZGluZyB0aWR5dmVyc2U6IHJlYWRyXG5Mb2FkaW5nIHRpZHl2ZXJzZTogcHVycnJcbkxvYWRpbmcgdGlkeXZlcnNlOiBkcGx5clxucGFja2FnZSCRZ2dwbG90MpIgd2FzIGJ1aWx0IHVuZGVyIFIgdmVyc2lvbiAzLjMuM3BhY2thZ2UgkXRpYmJsZZIgd2FzIGJ1aWx0IHVuZGVyIFIgdmVyc2lvbiAzLjMuM3BhY2thZ2UgkXRpZHlykiB3YXMgYnVpbHQgdW5kZXIgUiB2ZXJzaW9uIDMuMy4zcGFja2FnZSCRcmVhZHKSIHdhcyBidWlsdCB1bmRlciBSIHZlcnNpb24gMy4zLjNwYWNrYWdlIJFwdXJycpIgd2FzIGJ1aWx0IHVuZGVyIFIgdmVyc2lvbiAzLjMuM3BhY2thZ2UgkWRwbHlykiB3YXMgYnVpbHQgdW5kZXIgUiB2ZXJzaW9uIDMuMy4zQ29uZmxpY3RzIHdpdGggdGlkeSBwYWNrYWdlcyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxuZmlsdGVyKCk6IGRwbHlyLCBzdGF0c1xubGFnKCk6ICAgIGRwbHlyLCBzdGF0c1xuIn0= -->
+<pre><code>package 㤼㸱tidyverse㤼㸲 was built under R version 3.3.3Loading tidyverse: ggplot2
+Loading tidyverse: tibble
+Loading tidyverse: tidyr
+Loading tidyverse: readr
+Loading tidyverse: purrr
+Loading tidyverse: dplyr
+package 㤼㸱ggplot2㤼㸲 was built under R version 3.3.3package 㤼㸱tibble㤼㸲 was built under R version 3.3.3package 㤼㸱tidyr㤼㸲 was built under R version 3.3.3package 㤼㸱readr㤼㸲 was built under R version 3.3.3package 㤼㸱purrr㤼㸲 was built under R version 3.3.3package 㤼㸱dplyr㤼㸲 was built under R version 3.3.3Conflicts with tidy packages -----------------------------------------------------------------------
+filter(): dplyr, stats
+lag():    dplyr, stats</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShnZ3Bsb3QyKVxubGlicmFyeShyZWFkcilcbmxpYnJhcnkoZHBseXIpIFxudGhlbWVfc2V0KHRoZW1lX21pbmltYWwoKSlcbmBgYCJ9 -->
+<pre class="r"><code>library(ggplot2)
 library(readr)
 library(dplyr) 
 theme_set(theme_minimal())</code></pre>
@@ -188,10 +201,26 @@ theme_set(theme_minimal())</code></pre>
 <p><em>Carregando os dados</em></p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGJuZWcgPC0gcmVhZF9kZWxpbShcIi4uL2RibmVnLmNzdlwiLCBcbiAgICBcIjtcIiwgZXNjYXBlX2RvdWJsZSA9IEZBTFNFLCB0cmltX3dzID0gVFJVRSkgJT4lIGZpbHRlcihzZW50aW1lbnQgPT0gMClcblxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGF0YWx1bGFmcmFtZSA8LSByZWFkLmNzdihcIi4uL2x1bGEuY3N2XCIsIGVuY29kaW5nID0gXCJVVEYtOFwiKVxuZGJwb3MgPC0gcmVhZF9kZWxpbShcIi4uL2RicG9zLmNzdlwiLCBcbiAgICBcIjtcIiwgZXNjYXBlX2RvdWJsZSA9IEZBTFNFLCB0cmltX3dzID0gVFJVRSlcbmBgYCJ9 -->
+<pre class="r"><code>datalulaframe &lt;- read.csv(&quot;../lula.csv&quot;, encoding = &quot;UTF-8&quot;)
+dbpos &lt;- read_delim(&quot;../dbpos.csv&quot;, 
+    &quot;;&quot;, escape_double = FALSE, trim_ws = TRUE)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiUGFyc2VkIHdpdGggY29sdW1uIHNwZWNpZmljYXRpb246XG5jb2xzKFxuICBpZCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgdGV4dCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgc2VudGltZW50ID0gY29sX2ludGVnZXIoKVxuKVxubnVtYmVyIG9mIGNvbHVtbnMgb2YgcmVzdWx0IGlzIG5vdCBhIG11bHRpcGxlIG9mIHZlY3RvciBsZW5ndGggKGFyZyAxKTk0IHBhcnNpbmcgZmFpbHVyZXMuXG5yb3cgXHUwMDFiWzM4OzU7MjQ2bSMgQSB0aWJibGU6IDUgeCA1XHUwMDFiWzM5bSBjb2wgICAgIHJvdyBjb2wgICBleHBlY3RlZCAgYWN0dWFsICAgIGZpbGUgICAgICAgICAgIGV4cGVjdGVkICAgXHUwMDFiWzNtXHUwMDFiWzM4OzU7MjQ2bTxpbnQ+XHUwMDFiWzM5bVx1MDAxYlsyM20gXHUwMDFiWzNtXHUwMDFiWzM4OzU7MjQ2bTxjaHI+XHUwMDFiWzM5bVx1MDAxYlsyM20gXHUwMDFiWzNtXHUwMDFiWzM4OzU7MjQ2bTxjaHI+XHUwMDFiWzM5bVx1MDAxYlsyM20gICAgIFx1MDAxYlszbVx1MDAxYlszODs1OzI0Nm08Y2hyPlx1MDAxYlszOW1cdTAwMWJbMjNtICAgICBcdTAwMWJbM21cdTAwMWJbMzg7NTsyNDZtPGNocj5cdTAwMWJbMzltXHUwMDFiWzIzbSAgICAgICAgICBhY3R1YWwgXHUwMDFiWzM4OzU7MjUwbTFcdTAwMWJbMzltICAgOTM1IFx1MDAxYlszMW1OQVx1MDAxYlszOW0gICAgMyBjb2x1bW5zIDIgY29sdW1ucyAnLi4vZGJwb3MuY3N2JyBmaWxlIFx1MDAxYlszODs1OzI1MG0yXHUwMDFiWzM5bSAgIDkzNiBcdTAwMWJbMzFtTkFcdTAwMWJbMzltICAgIDMgY29sdW1ucyAxIGNvbHVtbnMgJy4uL2RicG9zLmNzdicgcm93IFx1MDAxYlszODs1OzI1MG0zXHUwMDFiWzM5bSAgIDkzNyBcdTAwMWJbMzFtTkFcdTAwMWJbMzltICAgIDMgY29sdW1ucyAyIGNvbHVtbnMgJy4uL2RicG9zLmNzdicgY29sIFx1MDAxYlszODs1OzI1MG00XHUwMDFiWzM5bSAgXHUwMDFiWzRtMlx1MDAxYlsyNG0yMDAgXHUwMDFiWzMxbU5BXHUwMDFiWzM5bSAgICAzIGNvbHVtbnMgMiBjb2x1bW5zICcuLi9kYnBvcy5jc3YnIGV4cGVjdGVkIFx1MDAxYlszODs1OzI1MG01XHUwMDFiWzM5bSAgXHUwMDFiWzRtMlx1MDAxYlsyNG0yMDEgXHUwMDFiWzMxbU5BXHUwMDFiWzM5bSAgICAzIGNvbHVtbnMgMiBjb2x1bW5zICcuLi9kYnBvcy5jc3YnXG4uLi4gLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uIC4uLiAuLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4gLi4uLi4uLi4gLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4gLi4uLi4uIC4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uIC4uLi4gLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4gLi4uIC4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uIC4uLiAuLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLiAuLi4uLi4uLiAuLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLlxuU2VlIHByb2JsZW1zKC4uLikgZm9yIG1vcmUgZGV0YWlscy5cbiJ9 -->
+<pre><code>Parsed with column specification:
+cols(
+  id = col_character(),
+  text = col_character(),
+  sentiment = col_integer()
+)
+number of columns of result is not a multiple of vector length (arg 1)94 parsing failures.
+row [38;5;246m# A tibble: 5 x 5[39m col     row col   expected  actual    file           expected   [3m[38;5;246m&lt;int&gt;[39m[23m [3m[38;5;246m&lt;chr&gt;[39m[23m [3m[38;5;246m&lt;chr&gt;[39m[23m     [3m[38;5;246m&lt;chr&gt;[39m[23m     [3m[38;5;246m&lt;chr&gt;[39m[23m          actual [38;5;250m1[39m   935 [31mNA[39m    3 columns 2 columns '../dbpos.csv' file [38;5;250m2[39m   936 [31mNA[39m    3 columns 1 columns '../dbpos.csv' row [38;5;250m3[39m   937 [31mNA[39m    3 columns 2 columns '../dbpos.csv' col [38;5;250m4[39m  [4m2[24m200 [31mNA[39m    3 columns 2 columns '../dbpos.csv' expected [38;5;250m5[39m  [4m2[24m201 [31mNA[39m    3 columns 2 columns '../dbpos.csv'
+... ................................. ... ................................................ ........ ............................................................................................................................................................................. ...... .......................................................................... .... .......................................................................... ... .......................................................................... ... ................................................................................... ........ ...................................................................................
+See problems(...) for more details.</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGJuZWcgPC0gcmVhZF9kZWxpbShcIi4uL2RibmVnLmNzdlwiLCBcbiAgICBcIjtcIiwgZXNjYXBlX2RvdWJsZSA9IEZBTFNFLCB0cmltX3dzID0gVFJVRSkgJT4lIGZpbHRlcihzZW50aW1lbnQgPT0gMClcbmBgYCJ9 -->
 <pre class="r"><code>dbneg &lt;- read_delim(&quot;../dbneg.csv&quot;, 
-    &quot;;&quot;, escape_double = FALSE, trim_ws = TRUE) %&gt;% filter(sentiment == 0)
-</code></pre>
+    &quot;;&quot;, escape_double = FALSE, trim_ws = TRUE) %&gt;% filter(sentiment == 0)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-output-begin eyJkYXRhIjoiUGFyc2VkIHdpdGggY29sdW1uIHNwZWNpZmljYXRpb246XG5jb2xzKFxuICBpZCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgdGV4dCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgc2VudGltZW50ID0gY29sX2ludGVnZXIoKVxuKVxubnVtYmVyIG9mIGNvbHVtbnMgb2YgcmVzdWx0IGlzIG5vdCBhIG11bHRpcGxlIG9mIHZlY3RvciBsZW5ndGggKGFyZyAxKTk0IHBhcnNpbmcgZmFpbHVyZXMuXG5yb3cgXHUwMDFiWzM4OzU7MjQ2bSMgQSB0aWJibGU6IDUgeCA1XHUwMDFiWzM5bSBjb2wgICAgIHJvdyBjb2wgICBleHBlY3RlZCAgYWN0dWFsICAgIGZpbGUgICAgICAgICAgIGV4cGVjdGVkICAgXHUwMDFiWzNtXHUwMDFiWzM4OzU7MjQ2bTxpbnQ+XHUwMDFiWzM5bVx1MDAxYlsyM20gXHUwMDFiWzNtXHUwMDFiWzM4OzU7MjQ2bTxjaHI+XHUwMDFiWzM5bVx1MDAxYlsyM20gXHUwMDFiWzNtXHUwMDFiWzM4OzU7MjQ2bTxjaHI+XHUwMDFiWzM5bVx1MDAxYlsyM20gICAgIFx1MDAxYlszbVx1MDAxYlszODs1OzI0Nm08Y2hyPlx1MDAxYlszOW1cdTAwMWJbMjNtICAgICBcdTAwMWJbM21cdTAwMWJbMzg7NTsyNDZtPGNocj5cdTAwMWJbMzltXHUwMDFiWzIzbSAgICAgICAgICBhY3R1YWwgXHUwMDFiWzM4OzU7MjUwbTFcdTAwMWJbMzltICAgOTM1IFx1MDAxYlszMW1OQVx1MDAxYlszOW0gICAgMyBjb2x1bW5zIDIgY29sdW1ucyAnLi4vZGJuZWcuY3N2JyBmaWxlIFx1MDAxYlszODs1OzI1MG0yXHUwMDFiWzM5bSAgIDkzNiBcdTAwMWJbMzFtTkFcdTAwMWJbMzltICAgIDMgY29sdW1ucyAxIGNvbHVtbnMgJy4uL2RibmVnLmNzdicgcm93IFx1MDAxYlszODs1OzI1MG0zXHUwMDFiWzM5bSAgIDkzNyBcdTAwMWJbMzFtTkFcdTAwMWJbMzltICAgIDMgY29sdW1ucyAyIGNvbHVtbnMgJy4uL2RibmVnLmNzdicgY29sIFx1MDAxYlszODs1OzI1MG00XHUwMDFiWzM5bSAgXHUwMDFiWzRtMlx1MDAxYlsyNG0yMDAgXHUwMDFiWzMxbU5BXHUwMDFiWzM5bSAgICAzIGNvbHVtbnMgMiBjb2x1bW5zICcuLi9kYm5lZy5jc3YnIGV4cGVjdGVkIFx1MDAxYlszODs1OzI1MG01XHUwMDFiWzM5bSAgXHUwMDFiWzRtMlx1MDAxYlsyNG0yMDEgXHUwMDFiWzMxbU5BXHUwMDFiWzM5bSAgICAzIGNvbHVtbnMgMiBjb2x1bW5zICcuLi9kYm5lZy5jc3YnXG4uLi4gLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uIC4uLiAuLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4gLi4uLi4uLi4gLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4gLi4uLi4uIC4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uIC4uLi4gLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4gLi4uIC4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uIC4uLiAuLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLiAuLi4uLi4uLiAuLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLlxuU2VlIHByb2JsZW1zKC4uLikgZm9yIG1vcmUgZGV0YWlscy5cbnBhY2thZ2Ug46S847ixYmluZHJjcHDjpLzjuLIgd2FzIGJ1aWx0IHVuZGVyIFIgdmVyc2lvbiAzLjMuM1xuIn0= -->
 <pre><code>Parsed with column specification:
@@ -206,6 +235,11 @@ row [38;5;246m# A tibble: 5 x 5[39m col     row col   expected  actual    file
 See problems(...) for more details.
 package 㤼㸱bindrcpp㤼㸲 was built under R version 3.3.3</code></pre>
 <!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGIgPC0gcmJpbmQoZGJwb3MsZGJuZWcpXG5kYiA8LSBuYS5vbWl0KGRiKVxud3JpdGUuY3N2KGRiLCBmaWxlID0gXCJsdWxhLmNzdlwiKVxuYGBgIn0= -->
+<pre class="r"><code>db &lt;- rbind(dbpos,dbneg)
+db &lt;- na.omit(db)
+write.csv(db, file = &quot;lula.csv&quot;)</code></pre>
+<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
@@ -214,7 +248,7 @@ package 㤼㸱bindrcpp㤼㸲 was built under R version 3.3.3</code></pre>
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIiNMdWxhTGl2cmUiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQoNCg0KYGBge3J9DQprbml0cjo6b3B0c19jaHVuayRzZXQoZWNobyA9IFRSVUUsIHdhcm5pbmcgPSBGQUxTRSwgbWVzc2FnZSA9IEZBTFNFKQ0KbGlicmFyeSh0aWR5dmVyc2UpDQpsaWJyYXJ5KGdncGxvdDIpDQpsaWJyYXJ5KHJlYWRyKQ0KbGlicmFyeShkcGx5cikgDQp0aGVtZV9zZXQodGhlbWVfbWluaW1hbCgpKQ0KYGBgDQoNCg0KKkNhcnJlZ2FuZG8gb3MgZGFkb3MqDQpgYGB7cn0NCmRhdGFsdWxhZnJhbWUgPC0gcmVhZC5jc3YoIi4uL2x1bGEuY3N2IiwgZW5jb2RpbmcgPSAiVVRGLTgiKQ0KDQpkYnBvcyA8LSByZWFkX2RlbGltKCIuLi9kYnBvcy5jc3YiLCANCiAgICAiOyIsIGVzY2FwZV9kb3VibGUgPSBGQUxTRSwgdHJpbV93cyA9IFRSVUUpDQpkYm5lZyA8LSByZWFkX2RlbGltKCIuLi9kYm5lZy5jc3YiLCANCiAgICAiOyIsIGVzY2FwZV9kb3VibGUgPSBGQUxTRSwgdHJpbV93cyA9IFRSVUUpICU+JSBmaWx0ZXIoc2VudGltZW50ID09IDApDQoNCmRiIDwtIHJiaW5kKGRicG9zLGRibmVnKQ0KZGIgPC0gbmEub21pdChkYikNCg0Kd3JpdGUuY3N2KGRiLCBmaWxlID0gImRiLmNzdiIpDQoNCmBgYA0KDQoNCmBgYHtyfQ0KDQpgYGANCg0K</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIiNMdWxhTGl2cmUiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQoNCg0KYGBge3J9DQprbml0cjo6b3B0c19jaHVuayRzZXQoZWNobyA9IFRSVUUsIHdhcm5pbmcgPSBGQUxTRSwgbWVzc2FnZSA9IEZBTFNFKQ0KbGlicmFyeSh0aWR5dmVyc2UpDQpsaWJyYXJ5KGdncGxvdDIpDQpsaWJyYXJ5KHJlYWRyKQ0KbGlicmFyeShkcGx5cikgDQp0aGVtZV9zZXQodGhlbWVfbWluaW1hbCgpKQ0KYGBgDQoNCg0KKkNhcnJlZ2FuZG8gb3MgZGFkb3MqDQpgYGB7cn0NCmRhdGFsdWxhZnJhbWUgPC0gcmVhZC5jc3YoIi4uL2x1bGEuY3N2IiwgZW5jb2RpbmcgPSAiVVRGLTgiKQ0KDQpkYnBvcyA8LSByZWFkX2RlbGltKCIuLi9kYnBvcy5jc3YiLCANCiAgICAiOyIsIGVzY2FwZV9kb3VibGUgPSBGQUxTRSwgdHJpbV93cyA9IFRSVUUpDQpkYm5lZyA8LSByZWFkX2RlbGltKCIuLi9kYm5lZy5jc3YiLCANCiAgICAiOyIsIGVzY2FwZV9kb3VibGUgPSBGQUxTRSwgdHJpbV93cyA9IFRSVUUpICU+JSBmaWx0ZXIoc2VudGltZW50ID09IDApDQoNCmRiIDwtIHJiaW5kKGRicG9zLGRibmVnKQ0KZGIgPC0gbmEub21pdChkYikNCg0KDQp3cml0ZS5jc3YoZGJsdWxhLCBmaWxlID0gImx1bGEuY3N2IikNCg0KYGBgDQoNCg0KYGBge3J9DQoNCmBgYA0KDQo=</div>
 
 
 
